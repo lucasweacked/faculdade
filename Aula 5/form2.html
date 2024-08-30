@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+</head>
+<body>
+
+    <h1>Contato</h1>
+
+    <form method="post" action="https://professores.unisanta.br/sobrino/scripts/mostra-v2.php">
+
+        </p>
+
+        <label for="email"><b>E-Mail</b></label><br>
+        <input type="email" name="email" id="email" required><br>
+
+        </p>
+
+        <label for="telefone"><b>Telefone</b></label><br>
+        <input type="tel" name="telefone" id="telefone" required><br>
+
+        </p>
+
+        <p>
+            <label for="motivo-contato"><b>Motivo do Contato</b></label><br>
+            <textarea name="motivo-contato" id="motivo-contato" rows="5" cols="45"></textarea>
+        </p>
+
+        <p>
+
+            <label for="escolaridade"><b>Escolaridade</b></label><br>
+            <select name="escolaridade" id="escolaridade" required>
+                <option value="">Escolhas...</option>
+                <option value="ef">Ensino Fundamental</option>
+                <option value="em">Ensino médio</option>
+                <option value="et">Ensino tecnico</option>
+                <option value="es">Ensino Superior</option>
+                <option value="pg">Pos-Graduação</option>
+            </select>
+
+        </p>
+
+        <p>
+
+            <fieldset>
+                <legend>Você é aluno do Santa?</legend>
+                
+                <input type="radio" name="aluno-unisanta" value="s" id="aluno-unisanta-s"><label for="aluno-unisanta-s">Sim</label>
+                <input type="radio" name="aluno-unisanta" value="n" id="aluno-unisanta-n"><label for="aluno-unisanta-n">Não</label>
+            </fieldset>
+
+        </p>
+
+        <p>
+
+            <fieldset>
+                <legend>Assinale a sua linguagem favorita:</legend>
+                
+                <input type="checkbox" name="ling[]" value="c#" id="ling-c#"><label for="ling-c#">C#</label>
+                <input type="checkbox" name="ling[]" value="html" id="ling-html"><label for="ling-html">HTML</label>
+                <input type="checkbox" name="ling[]" value="js" id="ling-js"><label for="ling-js">JavaScript</label>
+                <input type="checkbox" name="ling[]" value="php" id="ling-php"><label for="ling-php">PHP</label>
+            </fieldset>
+
+        </p>
+
+        <button type="submit">Enviar</button>
+        <!-- <input type="submit" value="Entrar"> Jeito antigo. -->
+        <!-- <button type="reset">Limpar</button> -->
+        <!-- <button type="button">Validar</button> -->
+
+    </form>
+
+</body>
+</html>
