@@ -1,0 +1,48 @@
+body, select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+label, legend, button {
+    font-weight: bold;
+}
+
+fieldset label {
+    font-weight: normal;
+    display: inline;
+}
+
+label, button {
+    display: block;
+}
+
+input, textarea, select, fieldset {
+    margin-bottom: 8px;
+    border: 2px solid #c2c2c2;
+    padding: 5px;
+}
+
+/* Ou pode ser também [type="email"] */
+#email, textarea, fieldset {
+    width: 350px;
+}
+
+textarea {
+    height: 90px;
+    resize: none;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #0000ff;
+}
+
+button:hover {
+    background-color: #11119b;
+}
+
+form :focus {
+    outline: 2px solid #1469d8;
+}
